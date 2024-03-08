@@ -166,7 +166,7 @@ def dice_set(saved=None):
                     ds_roll = options[select - 1].split(";")
                     for roll in ds_roll:
                         ds_roll_list.append(tuple(filter(None, roll.split(","))))
-                        dice(imported=ds_roll_list)
+                    dice(imported=ds_roll_list)
                     break
                 # Single dice roll(s) in a single query
                 except ValueError:
